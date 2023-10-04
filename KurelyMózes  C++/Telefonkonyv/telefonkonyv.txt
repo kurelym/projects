@@ -1,0 +1,14 @@
+E;K;Asztalos Jozsef,+36-30-123-4567,Asztalos,Nem olyan ugyes
+U;K;Brillians Bela,+36-70-987-6543,MOL,Vezeto
+U;K;Business Bela,+36-20-567-8901,MOL,CEO
+B;K;Eszter Jakobic,+36202304949,Eszti,nincs
+K;Kedves Szomszed,+36-70-234-5678
+E;K;Kertesz Imre,+36-30-876-5432,Kertesz,Szereti a viragokat
+B;K;Kurely Laszlo,236721321,Lacko,23213
+E;K;Lakatos Lajos,238721973,Lakatos,Sokat iszik
+K;Liftes Jozsef,+36-30-456-7890
+E;K;Mester Ember,+36-20-901-2345,Viz-gaz-futes szerelo,Sokat pihen
+B;K;Nagy Adam,+36-30-678-9012,Adi,+36-30-123-4567
+K;Nagy Bela,+36-70-987-6543
+U;K;Okos Odon,+36-20-567-8901,MOL,takarito
+K;Sima Langos,+36-70-234-5678
