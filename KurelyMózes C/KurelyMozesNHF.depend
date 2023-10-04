@@ -1,0 +1,215 @@
+# depslib dependency file v1.0
+1638219043 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\main.c
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"jatek.h"
+	"debugmalloc.h"
+	"megjelenites.h"
+	"dicsoseglista.h"
+	<windows.h>
+
+1637850725 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\akasztofa.c
+
+1638119627 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\megjelenites.h
+	"dicsoseglista.h"
+
+1638727472 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\megjelenites.c
+	<stdio.h>
+	<stdlib.h>
+	"debugmalloc.h"
+	"megjelenites.h"
+	"dicsoseglista.h"
+
+1638120755 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\dicsoseglista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"debugmalloc.h"
+	"dicsoseglista.h"
+
+1638120750 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\dicsoseglista.h
+
+1638122732 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\jatek.h
+	<stdio.h>
+	<string.h>
+	"szotar_kezeles.h"
+
+1638122434 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\szotar_kezeles.h
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+
+1638727523 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\jatek.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdbool.h>
+	"jatek.h"
+	"debugmalloc.h"
+	"megjelenites.h"
+	"szotar_kezeles.h"
+
+1638138789 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\szotar_kezeles.c
+	<time.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdbool.h>
+	"debugmalloc.h"
+	"dicsoseglista.h"
+	"szotar_kezeles.h"
+
+1636123040 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf\debugmalloc.h
+	<stdbool.h>
+	<stddef.h>
+	<stdlib.h>
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	<stdarg.h>
+	<process.h>
+	<unistd.h>
+
+1638117155 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\dicsoseglista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"debugmalloc.h"
+	"dicsoseglista.h"
+
+1636119440 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\debugmalloc.h
+	<stdbool.h>
+	<stddef.h>
+	<stdlib.h>
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	<stdarg.h>
+	<process.h>
+	<unistd.h>
+
+1638117150 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\dicsoseglista.h
+
+1638119160 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\jatek.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdbool.h>
+	"jatek.h"
+	"debugmalloc.h"
+	"megjelenites.h"
+	"szotar_kezeles.h"
+
+1638119132 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\jatek.h
+	<stdio.h>
+	<string.h>
+	"szotar_kezeles.h"
+
+1638118834 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\szotar_kezeles.h
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+
+1638116027 c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\megjelenites.h
+	"dicsoseglista.h"
+
+1638114026 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\main.c
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	"jatek.h"
+	"debugmalloc.h"
+	"megjelenites.h"
+	"dicsoseglista.h"
+	<windows.h>
+
+1638116021 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\megjelenites.c
+	<stdio.h>
+	<stdlib.h>
+	"debugmalloc.h"
+	"megjelenites.h"
+	"dicsoseglista.h"
+
+1638118834 source:c:\users\7480\documents\c\nh\finalversion\kurelymozesnhf másolata\szotar_kezeles.c
+	<time.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdbool.h>
+	"debugmalloc.h"
+	"dicsoseglista.h"
+	"szotar_kezeles.h"
+
+1638120755 source:c:\users\7480\desktop\kurelymozesnhf\dicsoseglista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"debugmalloc.h"
+	"dicsoseglista.h"
+
+1636123040 c:\users\7480\desktop\kurelymozesnhf\debugmalloc.h
+	<stdbool.h>
+	<stddef.h>
+	<stdlib.h>
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	<stdarg.h>
+	<process.h>
+	<unistd.h>
+
+1638120750 c:\users\7480\desktop\kurelymozesnhf\dicsoseglista.h
+
+1638727523 source:c:\users\7480\desktop\kurelymozesnhf\jatek.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdbool.h>
+	"jatek.h"
+	"debugmalloc.h"
+	"megjelenites.h"
+	"szotar_kezeles.h"
+
+1638122732 c:\users\7480\desktop\kurelymozesnhf\jatek.h
+	<stdio.h>
+	<string.h>
+	"szotar_kezeles.h"
+
+1638122434 c:\users\7480\desktop\kurelymozesnhf\szotar_kezeles.h
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+
+1638119627 c:\users\7480\desktop\kurelymozesnhf\megjelenites.h
+	"dicsoseglista.h"
+
+1638219043 source:c:\users\7480\desktop\kurelymozesnhf\main.c
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"jatek.h"
+	"debugmalloc.h"
+	"megjelenites.h"
+	"dicsoseglista.h"
+	<windows.h>
+
+1638727472 source:c:\users\7480\desktop\kurelymozesnhf\megjelenites.c
+	<stdio.h>
+	<stdlib.h>
+	"debugmalloc.h"
+	"megjelenites.h"
+	"dicsoseglista.h"
+
+1638138789 source:c:\users\7480\desktop\kurelymozesnhf\szotar_kezeles.c
+	<time.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdbool.h>
+	"debugmalloc.h"
+	"dicsoseglista.h"
+	"szotar_kezeles.h"
+
