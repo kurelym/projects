@@ -1,21 +1,12 @@
-﻿**HÁZI FELADAT**     Programozás alapjai 2. Végleges 
-
+﻿**HÁZI FELADAT**     
+Programozás alapjai 2. 
 Kurely Mózes 
+2023. május. 28.
 
-F0QEL1       2023. május. 28. ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.001.png)
 
-**TARTALOM** 
+1. **Feladat**
 
-1. [Feladat ................................................................................................................................. 2](#_page1_x68.00_y28.92)
-1. [Feladatspecifikáció ............................................................................................................. 2](#_page1_x68.00_y55.92)
-1. [Pontosított feladatspecifikáció ............................................................................................... 3](#_page1_x68.00_y28.92)
-1. [Megvalósítás ....................................................................................................................... 4 ](#_page1_x68.00_y55.92)
-1. [Osztályok funkciói .............................................................................................................. 5 ](#_page1_x68.00_y55.92)
-1. [Main és bemenetek ............................................................................................................. 6 ](#_page1_x68.00_y55.92)
-
-1. **Feladat<a name="_page1_x68.00_y28.92"></a>** 
-
-<a name="_page1_x68.00_y55.92"></a>**1.1 Telefonkönyv 
+Telefonkönyv 
 
 Tervezze meg egy telefonkönyv alkalmazás egyszerűsített objektummodelljét, majd valósítsa azt meg! A telefonkönyvben kezdetben az alábbi adatokat akarjuk tárolni, de később bővíteni akarunk: 
 
@@ -32,6 +23,7 @@ Az alkalmazással minimum a következő műveleteket kívánjuk elvégezni:
 - listázás 
 
 A rendszer lehet bővebb funkcionalitású (pl. módosítás, keresés), ezért nagyon fontos, hogy jól határozza meg az objektumokat és azok felelősségét. Demonstrálja a működést külön modulként fordított tesztprogrammal!
+
 
 2. **Feladatspecifikáció** 
 
@@ -53,7 +45,9 @@ Először is ki kell választanunk, hogy milyen kontaktok szeretnénk létrehozn
 
 Ki tudunk jelölni kontaktot a sorszáma alapján módosításra. Ekkor tudjuk majd módosítani. 
 
-A  telefonkönyvet  lehet  másolni  illetve  be  lehet  olvasni  fájlból,  illetve  módosítás  után mentésre is kerül txt-be. ![ref1]
+A  telefonkönyvet  lehet  másolni  illetve  be  lehet  olvasni  fájlból,  illetve  módosítás  után mentésre is kerül txt-be.
+
+
 
 3. **Pontosított feladatspecifikáció** 
 
@@ -61,23 +55,23 @@ A  telefonkönyv  program  felhasználói  felülete  egy  telefonon  lévő  te
 
 Az alábbi menüpontok lesznek:  
 
-1, Keresés 
+   1, Keresés 
 
-2, Új kontakt hozzáadása 
+   2, Új kontakt hozzáadása 
 
-3, Kontaktok listázása 
+   3, Kontaktok listázása 
 
-4, Meglévő kontakt módosítása
+   4, Meglévő kontakt módosítása
 
-5, Törles 
+   5, Törles 
 
-**1, Keresés:** Tetszőleges szöveg megadása után kilistázza azokat a kontaktokat amelyeknek bármelyik attribútuma tartalmazza az adott szöveget. 
+Keresés: Tetszőleges szöveg megadása után kilistázza azokat a kontaktokat amelyeknek bármelyik attribútuma tartalmazza az adott szöveget. 
 
-**2, Új kontakt hozzáadása:** A kontakt típusának kiválasztása után megadhatóak a megfelelő attribútumok, és menteni lehet a kontaktot.  
+Új kontakt hozzáadása: A kontakt típusának kiválasztása után megadhatóak a megfelelő attribútumok, és menteni lehet a kontaktot.  
 
-**3, Kontaktok listázása:** Ki lehet választani hogy milyen kontaktokat jelenítsünk meg.  
+Kontaktok listázása: Ki lehet választani hogy milyen kontaktokat jelenítsünk meg.  
 
-   A, mindet 
+    A, mindet 
 
     B, csak a barát típusú kontaktokat 
 
@@ -85,19 +79,16 @@ Az alábbi menüpontok lesznek:
 
     E, csak az Ezermester típusú kontaktokat 
 
-**4, Meglévő kontakt módosítása.** Megjelenik minden kontaktnak csak a neve. Ez alapján kiválasztunk egy kontaktot a sorszáma szerint. Megjelenítjük az aktuális adatait. Majd alatta megadhatjuk azok új értékeit. 
+Meglévő kontakt módosítása. Megjelenik minden kontaktnak csak a neve. Ez alapján kiválasztunk egy kontaktot a sorszáma szerint. Megjelenítjük az aktuális adatait. Majd alatta megadhatjuk azok új értékeit. 
 
-**5, Törlés:** D menüponthoz hasonlóan kiválasztunk egy kontaktot a sorszáma alapjának és eltávolítjuk azt a Kontaktok közül.  
+Törlés: Kiválasztunk egy kontaktot a sorszáma alapjának és eltávolítjuk azt a Kontaktok közül.  
 
-A menüben bizonyos karakterekkel tudunk navigálni. Vissza is léphetünk a főmenübe.  ![ref1]
-
+A menüben bizonyos karakterekkel tudunk navigálni. Vissza is léphetünk a főmenübe.
 
 
 4. **Megvalósítás**
 
-
-
-**UML:** 
+UML:
 
 A  Telefonkönyvet  a  már  félkövére  jelzett  osztályokkal,  és  az  aláhúzással  jelzett attribútumokkal fogom megvalósítani: 
 
@@ -107,74 +98,58 @@ Ezeken kívül szükség lesz még a Menu osztályra illetve Predikátum osztál
 
 ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.008.jpeg)
 
-**Tárolás** 
+Tárolás
 
 A telefonkönyvet txt-ben tároljuk illetve onnan be tudjuk olvasni. Ennek sorai a következő képpen fognak felépülni: 
 
-**kontakt típusát azonosító id; az ősosztályt azonosító id; kontakt\_neve; telefonszáma; kontakt típusának megfelelő további adattagok.** 
+kontakt típusát azonosító id; az ősosztályt azonosító id; kontakt\_neve; telefonszáma; kontakt típusának megfelelő további adattagok.
 
-példa1: egy barát kontaktot tartalmazó sor: B;K;Nagy János;06305608551;06701689548;Jancsi; 
+példa1: egy barát kontaktot tartalmazó sor: 
+B;K;Nagy János;06305608551;06701689548;Jancsi; 
 
 példa2: egy üzletfelet tartalmazó sor: 
-
 U;K;Kovács István;065012347895;MAV;vonatkerék pumpáló; 
-
 
 
 5. **Osztályok funkciói**
 
+Minden osztály minden függvényének leírása megtalálható a programfájlokban. 
 
-
-
-**Minden osztály minden függvényének leírása megtalálható a programfájlokban.** 
-
-**Kontakt:** 
-
+Kontakt:
 Olyan ős osztály melyben nevet es telefonszámot lehet tarolni.** 
 
-**Barát:** 
-
+Barát:
 A Kontakt osztály leszármazott osztálya. Ugyan úgy van neve es telefonszáma de e mellett van beceneve es privát telefonszáma. 
 
-**Ezermester:** 
-
+Ezermester:
 A Kontakt osztály leszármazott osztálya. Ugyan úgy van neve es telefonszáma de e mellett van szakma es megjegyzés attribútuma. 
 
-**Üzletfél:** 
-
+Üzletfél:
 A Kontakt osztály leszármazott osztálya. Ugyan úgy van neve es telefonszáma de e mellett van cég es beosztás attribútuma. 
 
-**Telefonkönyv:** 
-
+Telefonkönyv:
 Kontaktokra mutató pointereket taroló Telefonkönyv osztály. Van egy tárolója: kontaktok, maximális mérete: meret és egy aktuális méretét nyilvántartó attribútuma: aktMeret. 
 
-**Menü:** 
-
+Menü:
 Menü  osztály  a  telefonkönyv  alkalmazás  irányításához.  Van  egy  állapota  ami  azt  tartja nyilván, hogy az alkalmazás menüje éppen milyen állapotban van: allapot.  
 
 Predikátum osztályok: 
 
 Ezeknek az osztályoknak a segítségével valósítható meg generikus keresés. 
+BenneVanE: 
+   predikátum osztály arra hogy a kontakt tartalmazza-e az adott szót. 
 
-- **BenneVanE**: 
+UzletfelE: 
+   predikátum osztály arra, hogy üzletfél-e az adott kontakt. 
 
-`    `predikátum osztály arra hogy a kontakt tartalmazza-e az adott szót. 
+EzermesterE:
+   predikátum osztály arra, hogy ezermester-e az adott kontakt. 
 
-- **UzletfelE**: 
-
-`    `predikátum osztály arra, hogy üzletfél-e az adott kontakt. 
-
-- **EzermesterE**: 
-
-`    `predikátum osztály arra, hogy ezermester-e az adott kontakt. 
-
-- **BaratE**: 
-
-`    `predikátum osztály arra, hogy ezermester-e az adott kontakt. 
+BaratE: 
+   predikátum osztály arra, hogy ezermester-e az adott kontakt. 
 
 
 6. **Main és bemenetek** 
 
-A  feltöltött  main  fájl  valósítja  meg  a  Telefonkönyv  alkalmazást  az  előbbi  osztályok segítségével.  
-
+A  feltöltött  main  fájl  valósítja  meg  a  Telefonkönyv  alkalmazást  az  előbbi  osztályok segítségével.
 A megadott példa bemenetek az alkalmazás álltalános működését szimulálják, úgy, hogy az az alkalmazás minden részletét tesztelje.
