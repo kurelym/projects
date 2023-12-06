@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>120</y>
+      <w>155</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>Tower
+--
+- color: Color
+- owner: Color
+--
++ Tower(color: Color, owner: Color)
++ Tower(other: Tower)
++ getColor(): Color
++ getOwnerColor(): Color
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>265</x>
+      <y>175</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Board
+--
+- board: Field[8][8]
+- colors: Color[8][8]
+--
++ Board(randomized: boolean)
++ Board(other: Board)
++ getFieldAtPlace(i: int, j: int): Field
+- initColors(randomized: Boolean): void
+- initTowers(): void
++ clearPossibilities(): void
++ setPossibleFieldsFirstMove(aktPlayer: Player, choosenField: Field): void
++ setPossibleFieldsNow(aktPlayer: Player, lastFieldColor: Color): Field
++ currentField(aktPlayer: Player, lastFieldColor: Color): Field</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>45</x>
+      <y>100</y>
+      <w>165</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>Color
+--
+- value: int
+--
++ Color(value: int)
++ Color(other: Color)
++ getValue(): int
++ setValue(value: int): void
++ compare(other: Color): boolean
++ toString(): String
++ getAwtColor(): java.awt.Color</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>75</x>
+      <y>400</y>
+      <w>105</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+-color: Color
+--
++ Player(color: Color)
++ Player(other: Player)
++ getColor(): Color</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>275</x>
+      <y>320</y>
+      <w>140</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Game
+--
+- blackPlayer: Player
+- whitePlayer: Player
+- board: Board
+- aktPlayer: Player
+- winnerPlayer: Player
+- over: boolean
+- first: boolean
+- currentField: Field
+- patt: boolean
+- saved: boolean
+--
++ Game()
++ getBoard(): Board
++ nextMove(x: int, y: int): void
++ updateAktPLayer(): void
++ isOver(): boolean
++ isPatt(): boolean
++ getWinnerPlayer(): Player
++ isFinishingMove(): boolean
++ isSaved(): boolean
++ setSaved(saved: boolean): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>100</y>
+      <w>155</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Field
+--
+- color: Color
+- freedome: boolean
+- possible: boolean
+- selected: boolean
+- tower: Tower
+- coordinates: int[2]
+--
++ Field(color: Color, i: int, j: int)
++ Field(other: Field)
++ setTower(tower: Tower): void
++ getTower(): Tower
++ removeTower(): Tower
++ isFree(): boolean
++ isPossible(): boolean
++ setFreedome(freedome: boolean): void
++ setPossible(possible: boolean): void
++ getColor(): Color
++ getI(): int
++ getJ(): int
++ isSelected(): boolean
++ setSelected(selected: boolean): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>525</x>
+      <y>390</y>
+      <w>255</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>GameFrame
+--
+- state: int
+- gamePanel: GamePanel
+- mainMenuPanel: MainMenuPanel
+- savedGamesPanel: SavedGamesPanel
+- rulesPanel: RulesPanel
+- menuBar: JMenuBar
+- menu: JMenu
+- saveMenuItem: JMenuItem
+- backToMainMenuMenuItem: JMenuItem
+- lastMoveBackMenuItem: JMenuItem
+- game: Game
+--
++ GameFrame()
++ createGameMenu(): void
++ switchToGamePanel(): void
++ switchToSavedGames(): void
++ switchToMainMenu(): void
++ switchToRules(): void
++ getState(): int
++ getGame(): Game
++ setGame(game: Game): void
++ setNewGame(game: Game): void
+--
+Private Classes
+--
+- LastMoveBackListener implements ActionListener
+- SaveMenuItemListener implements ActionListener
+- BackToMainMenuListener implements ActionListener</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>825</x>
+      <y>355</y>
+      <w>190</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>GamePanel
+--
+- gameFrame: GameFrame
+- game: Game
+--
++ GamePanel(frame: GameFrame, game: Game)
++ GamePanel(frame: GameFrame)
++ setNewGame(): void
++ getGame(): Game
++ mouseClicked(e: MouseEvent): void
++ paintComponent(g: Graphics): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>825</x>
+      <y>465</y>
+      <w>185</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>MainMenuPanel
+--
+- gameFrame: GameFrame
+- startButton: JButton
+--
++ MainMenuPanel(gameFrame: GameFrame)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>825</x>
+      <y>525</y>
+      <w>95</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>RulesPanel
+--
++ RulesPanel()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>825</x>
+      <y>570</y>
+      <w>205</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>SavedGamesPanel
+--
++ SavedGamesPanel(gameFrame: GameFrame)
++ update(): void
++ loadGame(fileName: String): Game
++ createComboBox(): JComboBox&lt;String&gt;
+--
+Private Classes
+--
+- ComboBoxActionHandler implements ActionListener</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>240</y>
+      <w>240</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>460.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>140</y>
+      <w>60</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>335</x>
+      <y>290</y>
+      <w>15</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>460</y>
+      <w>125</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>775</x>
+      <y>420</y>
+      <w>60</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>775</x>
+      <y>480</y>
+      <w>60</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>775</x>
+      <y>530</y>
+      <w>60</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>775</x>
+      <y>585</y>
+      <w>60</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>175</y>
+      <w>75</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>175</x>
+      <y>440</y>
+      <w>110</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>115</x>
+      <y>190</y>
+      <w>15</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>205</x>
+      <y>105</y>
+      <w>565</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;1110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>205</x>
+      <y>130</y>
+      <w>365</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;710.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>325</y>
+      <w>360</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>700.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>355</y>
+      <w>425</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>830.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
