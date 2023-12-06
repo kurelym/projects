@@ -15,11 +15,11 @@ F0QEL1       2023. május. 28. ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d
 
 1. **Feladat<a name="_page1_x68.00_y28.92"></a>** 
 
-<a name="_page1_x68.00_y55.92"></a>**1.1 Telefonkönyv ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.002.png)**
+<a name="_page1_x68.00_y55.92"></a>**1.1 Telefonkönyv 
 
 Tervezze meg egy telefonkönyv alkalmazás egyszerűsített objektummodelljét, majd valósítsa azt meg! A telefonkönyvben kezdetben az alábbi adatokat akarjuk tárolni, de később bővíteni akarunk: 
 
-- Név (vezetéknév, keresztnév) ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.003.png)
+- Név (vezetéknév, keresztnév)
 - becenév 
 - cím 
 - munkahelyi szám 
@@ -27,11 +27,11 @@ Tervezze meg egy telefonkönyv alkalmazás egyszerűsített objektummodelljét, 
 
 Az alkalmazással minimum a következő műveleteket kívánjuk elvégezni: 
 
-- adatok felvétele ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.004.png)
+- adatok felvétele
 - adatok törlése 
 - listázás 
 
-A rendszer lehet bővebb funkcionalitású (pl. módosítás, keresés), ezért nagyon fontos, hogy jól határozza meg az objektumokat és azok felelősségét. Demonstrálja a működést külön modulként fordított tesztprogrammal! A megoldáshoz ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.005.png)**ne** használjon STL tárolót! 
+A rendszer lehet bővebb funkcionalitású (pl. módosítás, keresés), ezért nagyon fontos, hogy jól határozza meg az objektumokat és azok felelősségét. Demonstrálja a működést külön modulként fordított tesztprogrammal!
 
 2. **Feladatspecifikáció** 
 
@@ -67,7 +67,9 @@ Az alábbi menüpontok lesznek:
 
 3, Kontaktok listázása 
 
-4, Meglévő kontakt módosítása 5, Törles 
+4, Meglévő kontakt módosítása
+
+5, Törles 
 
 **1, Keresés:** Tetszőleges szöveg megadása után kilistázza azokat a kontaktokat amelyeknek bármelyik attribútuma tartalmazza az adott szöveget. 
 
@@ -75,13 +77,13 @@ Az alábbi menüpontok lesznek:
 
 **3, Kontaktok listázása:** Ki lehet választani hogy milyen kontaktokat jelenítsünk meg.  
 
-A, mindet 
+   A, mindet 
 
-B, csak a barát típusú kontaktokat 
+    B, csak a barát típusú kontaktokat 
 
-U, csak az Üzletfél típusú kontaktokat 
+    U, csak az Üzletfél típusú kontaktokat 
 
-E, csak az Ezermester típusú kontaktokat 
+    E, csak az Ezermester típusú kontaktokat 
 
 **4, Meglévő kontakt módosítása.** Megjelenik minden kontaktnak csak a neve. Ez alapján kiválasztunk egy kontaktot a sorszáma szerint. Megjelenítjük az aktuális adatait. Majd alatta megadhatjuk azok új értékeit. 
 
@@ -89,7 +91,11 @@ E, csak az Ezermester típusú kontaktokat
 
 A menüben bizonyos karakterekkel tudunk navigálni. Vissza is léphetünk a főmenübe.  ![ref1]
 
-4. **Megvalósítás** 
+
+
+4. **Megvalósítás**
+
+
 
 **UML:** 
 
@@ -97,7 +103,7 @@ A  Telefonkönyvet  a  már  félkövére  jelzett  osztályokkal,  és  az  al�
 
 ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.007.jpeg)
 
-Ezeken kívül szükség lesz még a Menu osztályra illetve Predikátum osztályokra a Generikus keresés megvalósításához.: ![ref1]
+Ezeken kívül szükség lesz még a Menu osztályra illetve Predikátum osztályokra a Generikus keresés megvalósításához.:
 
 ![](Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.008.jpeg)
 
@@ -113,7 +119,12 @@ példa2: egy üzletfelet tartalmazó sor:
 
 U;K;Kovács István;065012347895;MAV;vonatkerék pumpáló; 
 
-5. **Osztályok funkciói** 
+
+
+5. **Osztályok funkciói**
+
+
+
 
 **Minden osztály minden függvényének leírása megtalálható a programfájlokban.** 
 
@@ -161,12 +172,9 @@ Ezeknek az osztályoknak a segítségével valósítható meg generikus keresés
 
 `    `predikátum osztály arra, hogy ezermester-e az adott kontakt. 
 
-- ` `![ref1]
+
 6. **Main és bemenetek** 
 
 A  feltöltött  main  fájl  valósítja  meg  a  Telefonkönyv  alkalmazást  az  előbbi  osztályok segítségével.  
 
-A megadott példa bemenetek az alkalmazás álltalános működését szimulálják, úgy, hogy az az alkalmazás minden részletét tesztelje. ![ref1]
-\- 6 - 
-
-[ref1]: Kepek/Aspose.Words.757db108-0f1d-4f53-90eb-1d34f7fd6932.006.png
+A megadott példa bemenetek az alkalmazás álltalános működését szimulálják, úgy, hogy az az alkalmazás minden részletét tesztelje.
