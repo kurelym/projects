@@ -53,25 +53,17 @@ Az egyes részeknél csak az ott megjelenített menüpontok közül lehet válas
 
 Az 1-es menüpontot kiválasztva új játék kezdődik. Ekkor a program tippeket vár. Tippnek a magyar abc karaktereinek kisbetűs verziója adható meg. Maximum 100 új tipp adható meg. 
 
-Szabályos:    Szabálytalan: ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.003.png)![](Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.004.png)![](Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.005.png)
-
-**Az Új játék bemutatása ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.006.jpeg)**Az akasztófa állapota ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.007.png)
-
-![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.008.png)Rossz tippek ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.009.png)Helyes tippek A kitalálandó szó ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.010.png)
+ ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.006.jpeg)
 
 A játék feladásához Új tippnek a ’0’ karaktert szükséges megadni: 
 
-![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.011.png) Megfejtés ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.012.png)
+![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.012.png)
 
 Amennyiben az összes karakter ki lett találva, lehetőség van a pontszám, illetve név mentésére. Ezzel a lehetőséggel az ’i’ vagy a ’I’ betűk megadásával lehet élni, a ’n’ vagy a ’N’ betűk megadásával lehet nem élni.  
 
-Példa:  
-
-Megfejtés ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.013.png)![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.014.png)Elért pontszám 
+![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.013.png)
 
 A mentett név nem tartalmazhat szóközt, illetve maximum 50 karakter hosszú lehet és csak a magyar abc karaktereit tartalmazhatja. 
-
-Szabályos:    Szabálytalan:  ![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.015.png)![](kepek/Aspose.Words.9da78579-da95-4573-85a3-e41e3ae42434.016.png)
 
 **Dicsőség Lista:** 
 
