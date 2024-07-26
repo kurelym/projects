@@ -1,0 +1,22 @@
+-- Rooms --
+Room_1 0
+Room_2 0
+
+-- Room Connections --
+Room_1 Room_2 2
+
+-- Characters --
+
+-- Objects --
+CamambertCheese_1 CC 1
+WunderBaum_1 WB 1
+Mask_1 F 1
+HolyBeer_1 HB 1
+
+-- Objects in Rooms --
+Room_1 HolyBeer_1 CamambertCheese_1
+Room_2 Mask_1 WunderBaum_1
+
+-- Activated Objects in Rooms --
+
+-- Objects Carried by Characters --
